@@ -30,11 +30,12 @@
         {
             BrowseFilesButton = new Button();
             FilesPreview = new ListView();
+            textBox1 = new TextBox();
             SuspendLayout();
             // 
             // BrowseFilesButton
             // 
-            BrowseFilesButton.Location = new Point(81, 364);
+            BrowseFilesButton.Location = new Point(12, 8);
             BrowseFilesButton.Name = "BrowseFilesButton";
             BrowseFilesButton.Size = new Size(139, 29);
             BrowseFilesButton.TabIndex = 0;
@@ -43,27 +44,38 @@
             // 
             // FilesPreview
             // 
-            FilesPreview.Location = new Point(12, 12);
+            FilesPreview.Location = new Point(165, 52);
             FilesPreview.Name = "FilesPreview";
-            FilesPreview.Size = new Size(277, 327);
+            FilesPreview.Size = new Size(277, 287);
             FilesPreview.TabIndex = 1;
             FilesPreview.UseCompatibleStateImageBehavior = false;
+            FilesPreview.View = View.Details;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(165, 8);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(277, 23);
+            textBox1.TabIndex = 2;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(textBox1);
             Controls.Add(FilesPreview);
             Controls.Add(BrowseFilesButton);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button BrowseFilesButton;
         private ListView FilesPreview;
+        private TextBox textBox1;
     }
 }
