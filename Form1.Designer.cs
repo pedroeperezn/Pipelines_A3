@@ -31,16 +31,18 @@
             BrowseFilesButton = new Button();
             FilesPreview = new ListView();
             textBox1 = new TextBox();
+            folderBrowserAudio = new FolderBrowserDialog();
             SuspendLayout();
             // 
             // BrowseFilesButton
             // 
-            BrowseFilesButton.Location = new Point(12, 8);
+            BrowseFilesButton.Location = new Point(12, 18);
             BrowseFilesButton.Name = "BrowseFilesButton";
-            BrowseFilesButton.Size = new Size(139, 29);
+            BrowseFilesButton.Size = new Size(139, 23);
             BrowseFilesButton.TabIndex = 0;
             BrowseFilesButton.Text = "Browse for Files";
             BrowseFilesButton.UseVisualStyleBackColor = true;
+            BrowseFilesButton.Click += BrowseFilesButton_Click;
             // 
             // FilesPreview
             // 
@@ -53,10 +55,11 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(165, 8);
+            textBox1.Location = new Point(165, 18);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(277, 23);
             textBox1.TabIndex = 2;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // Form1
             // 
@@ -77,5 +80,6 @@
         private Button BrowseFilesButton;
         private ListView FilesPreview;
         private TextBox textBox1;
+        private FolderBrowserDialog folderBrowserAudio;
     }
 }
