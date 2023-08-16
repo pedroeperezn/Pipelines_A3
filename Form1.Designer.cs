@@ -33,6 +33,7 @@
             textBox1 = new TextBox();
             folderBrowserAudio = new FolderBrowserDialog();
             RefreshFilesButton = new Button();
+            OrganizeBtn = new Button();
             SuspendLayout();
             // 
             // BrowseFilesButton
@@ -74,11 +75,22 @@
             RefreshFilesButton.UseVisualStyleBackColor = true;
             RefreshFilesButton.Click += RefreshFilesButton_Click;
             // 
+            // OrganizeBtn
+            // 
+            OrganizeBtn.Location = new Point(165, 345);
+            OrganizeBtn.Name = "OrganizeBtn";
+            OrganizeBtn.Size = new Size(198, 23);
+            OrganizeBtn.TabIndex = 4;
+            OrganizeBtn.Text = "Organize Audio Files";
+            OrganizeBtn.UseVisualStyleBackColor = true;
+            OrganizeBtn.Click += OrganizeBtn_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(OrganizeBtn);
             Controls.Add(RefreshFilesButton);
             Controls.Add(textBox1);
             Controls.Add(FilesPreview);
@@ -96,5 +108,6 @@
         private TextBox textBox1;
         private FolderBrowserDialog folderBrowserAudio;
         private Button RefreshFilesButton;
+        private Button OrganizeBtn;
     }
 }
